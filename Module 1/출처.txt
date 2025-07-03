@@ -1,0 +1,13 @@
+Dataset :
+Kaggle - Malicious URLs dataset
+https://www.kaggle.com/datasets/sid321axn/malicious-urls-dataset
+
+모델 선택 근거 : 
+URL 주요특징을 고려한 악성URL 머신러닝 탐지모델 개발 - 한국정보통신학회논문지 -  Vol. 26, No. 12: 1786~1793, Dec. 2022
+https://koreascience.kr/article/JAKO202203255703372.pdf
+
+Feature 선정 근거
+UC Irvine Machine Learning Repository - Phishing Websites Donated on 3/25/2015 - (University of California, Irvine)
+https://archive.ics.uci.edu/dataset/327/phishing+websites
+
+
