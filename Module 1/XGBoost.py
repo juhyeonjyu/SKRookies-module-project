@@ -36,14 +36,14 @@ def extract_url_features(url) :
 if __name__ == '__main__' :
     # 데이터 전처리
     # 데이터 불러오기
-    # f = pd.read_csv('url.csv', encoding='latin1')
+    # df = pd.read_csv('url.csv', encoding='latin1')
     # label 1 데이터 추출
     # label_1 = df[df['label'] == 1]
     # label 0 데이터에서 label 1 개수만큼 랜덤 샘플링
     # label_0 = df[df['label'] == 0].sample(n=len(label_1), random_state=42)
     # 합쳐서 섞기
     # balanced = pd.concat([label_1, label_0]).sample(frac=1, random_state=42).reset_index(drop=True)
-    # print(balanced_df['label'].value_counts())
+    # print(balanced['label'].value_counts())
     # 데이터 저장 및 새로운 데이터 불러오기
     # balanced.to_csv('data.csv', index=False, encoding='utf-8-sig')
     df = pd.read_csv('data.csv')
@@ -81,14 +81,6 @@ if __name__ == '__main__' :
     y_pred = xgb_model.predict(X_test)
     print("\n정확도:", accuracy_score(y_test, y_pred))
     print(classification_report(y_test, y_pred))
-
-    # 피처 중요도 출력
-    importances = xgb_model.feature_importances_
-    feature_names = X.columns
-
-    # 보기 좋게 출력
-    for name, score in zip(feature_names, importances):
-        print(f"{name:20s} : {score:.4f}")
 
     # 모델 저장
     joblib.dump(xgb_model, 'XGBoost_model.pkl')
