@@ -1,0 +1,10 @@
+openai
+streamlit
+python-dotenv
+pandas
+numpy
+joblib
+xgboost
+scikit-learn
+tqdm
+faiss-cpu
