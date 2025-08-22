@@ -1,6 +1,6 @@
 # ui.py
 # 실행: streamlit run ui.py
-API_KEY_FALLBACK = "AIzaSyCE9Notum3eif_ljWQMgNI_jtqlM1OfEjI"  # 환경변수(GEMINI_API_KEY) 사용 권장
+API_KEY_FALLBACK = "[Gemini API 키를 발급 받아주세요.]"  # 환경변수(GEMINI_API_KEY) 사용 권장
 
 import os
 import json
