@@ -1,0 +1,1 @@
+New-Item -Path "$env:USERPROFILE\Desktop" -Name "YouAreHacked.txt" -ItemType "file" -Value "This PC has been compromised by the simulation."

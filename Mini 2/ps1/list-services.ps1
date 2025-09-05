@@ -1,0 +1,1 @@
+Get-Service | Where-Object { $_.Status -eq "Running" } | Out-File -FilePath "$env:TEMP\running_services.txt"

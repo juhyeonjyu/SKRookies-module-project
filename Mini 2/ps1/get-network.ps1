@@ -1,0 +1,1 @@
+Get-NetAdapter -Physical | Out-File -FilePath "$env:TEMP\network_adapters.txt"
